@@ -1,0 +1,8 @@
+joy_hit_trigger_node:
+  ros__parameters:
+    joy_topic: "/joy"
+    trigger_topic: "/hit_trigger"
+
+    # Xbox 360 A button
+    hit_button_index: 0
+    retrigger_lockout_ms: 400

@@ -1,0 +1,31 @@
+dm_motor_node:
+  ros__parameters:
+    wheel_speeds_topic: "/wheel_speeds"
+    can_interface: "can0"
+
+    # Wheel order in code:
+    # front_left  -> motor 2
+    # front_right -> motor 3
+    # rear_left   -> motor 1
+    # rear_right  -> motor 4
+    motor_ids: [2, 3, 1, 4]
+
+    # Use -1.0 for any motor that needs direction inversion.
+    motor_directions: [1.0, 1.0, 1.0, 1.0]
+
+    # Driver-side command shaping.
+    speed_command_scale: 1.5
+    launch_boost_gain: 1.8
+    launch_boost_threshold: 8.0
+    max_motor_speed: 30.0
+    accel_limit_rad_s2: 300.0
+    decel_limit_rad_s2: 50.0
+    command_id_offset: 0x200
+
+    # Driver safety / lifecycle.
+    clear_errors_on_startup: true
+    auto_enable_on_startup: true
+    enable_on_first_command: true
+    disable_on_shutdown: true
+    command_timeout_ms: 800
+    watchdog_period_ms: 50

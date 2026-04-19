@@ -1,0 +1,19 @@
+dm_pitch_motor_node:
+  ros__parameters:
+    pitch_target_topic: "/pitch_target_rad"
+    can_interface: "can0"
+
+    # J4310 pitch motor
+    motor_id: 6
+    command_id_offset: 0x200
+    position_command_id_offset: 0x100
+
+    # Zero position is the horizontal catcher tray.
+    # Around 4.0 rad corresponds to the desired catch angle.
+    min_pitch_rad: -1.0
+    max_pitch_rad: 5.0
+    tracking_velocity_rad_s: 1.0
+
+    clear_errors_on_startup: true
+    auto_enable_on_first_target: true
+    disable_on_shutdown: false

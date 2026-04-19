@@ -1,0 +1,15 @@
+pitch_controller_node:
+  ros__parameters:
+    joy_topic: "/joy"
+    pitch_target_topic: "/pitch_target_rad"
+
+    up_axis: 2
+    down_axis: 5
+    command_deadband: 0.05
+
+    min_pitch_rad: 0.0
+    max_pitch_rad: 4.0
+    initial_target_rad: 0.0
+    pitch_rate_rad_s: 1.0
+
+    publish_period_ms: 20

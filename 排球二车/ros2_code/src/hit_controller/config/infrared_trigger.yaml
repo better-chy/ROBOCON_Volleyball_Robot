@@ -1,0 +1,8 @@
+infrared_trigger_node:
+  ros__parameters:
+    trigger_topic: "/hit_trigger"
+    gpio_chip: "/dev/gpiochip1"
+    gpio_lines: [1, 0, 3, 9]
+    active_low: true
+    poll_period_ms: 10
+    retrigger_lockout_ms: 400

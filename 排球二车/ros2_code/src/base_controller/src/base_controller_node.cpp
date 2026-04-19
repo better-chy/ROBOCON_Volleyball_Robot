@@ -78,6 +78,13 @@ private:
       msg->linear.y,
       msg->angular.z);
 
+
+    // Wheel order in code:
+    // front_left  = wheel 2
+    // front_right = wheel 3
+    // rear_left   = wheel 1
+    // rear_right  = wheel 4
+
     dm_msgs::msg::WheelSpeeds wheel_msg;
     wheel_msg.front_left = static_cast<float>(wheel_speeds[0]);
     wheel_msg.front_right = static_cast<float>(wheel_speeds[1]);
