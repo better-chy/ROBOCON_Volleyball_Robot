@@ -79,7 +79,7 @@ ip -details link show can0
 ```
 cd /home/sunrise/ros2_vo_ws
 
-source /opt/ros/humble/setup.bsah
+source /opt/ros/humble/setup.bash
 
 colcon build
 
