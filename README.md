@@ -3,6 +3,7 @@
 ## Volleyball robot for Robocon competition
 
 [奖状_个人_二等奖.pdf](https://github.com/user-attachments/files/33045287/_._.pdf)
+[奖状_队伍_二等奖.pdf](https://github.com/user-attachments/files/34113990/_._.pdf)
 
 # 排球二车: ROS2 全向轮接球机器人控制工程
 
